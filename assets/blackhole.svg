@@ -1,0 +1,191 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="320" viewBox="0 0 900 320" role="img" aria-label="Hố đen vũ trụ xanh với các hành tinh và thiên thạch bay quanh">
+  <title>Hố đen vũ trụ xanh</title>
+  <desc>Banner động: hố đen xanh ở giữa, các hành tinh và thiên thạch bay quanh theo quỹ đạo, sao lấp lánh.</desc>
+
+  <defs>
+    <radialGradient id="space" cx="50%" cy="50%" r="80%">
+      <stop offset="0%"  stop-color="#0b2416"/>
+      <stop offset="45%" stop-color="#051510"/>
+      <stop offset="100%" stop-color="#010704"/>
+    </radialGradient>
+
+    <radialGradient id="halo" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"  stop-color="#00ff9d" stop-opacity="0.85"/>
+      <stop offset="35%" stop-color="#00e68a" stop-opacity="0.32"/>
+      <stop offset="70%" stop-color="#00b36b" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#00b36b" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="horizon" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"  stop-color="#000000"/>
+      <stop offset="80%" stop-color="#000000"/>
+      <stop offset="100%" stop-color="#02150c"/>
+    </radialGradient>
+
+    <linearGradient id="p1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#b6ffdc"/><stop offset="100%" stop-color="#00c878"/>
+    </linearGradient>
+    <linearGradient id="p2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#7dffc4"/><stop offset="100%" stop-color="#0a8f5b"/>
+    </linearGradient>
+    <linearGradient id="p3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d2ffe9"/><stop offset="100%" stop-color="#0e7a52"/>
+    </linearGradient>
+
+    <linearGradient id="tailUp" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"  stop-color="#bfffe0" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#bfffe0" stop-opacity="0.9"/>
+    </linearGradient>
+    <linearGradient id="tailDown" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"  stop-color="#bfffe0" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#bfffe0" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="cometTail" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"  stop-color="#00ff9d" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#eafff4" stop-opacity="0.95"/>
+    </linearGradient>
+
+    <filter id="glow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="3.2" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="soft" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="20"/>
+    </filter>
+  </defs>
+
+  <!-- ══ Nền vũ trụ ══ -->
+  <rect width="900" height="320" fill="url(#space)"/>
+  <ellipse cx="150" cy="70"  rx="150" ry="62" fill="#0fa968" opacity="0.10" filter="url(#soft)"/>
+  <ellipse cx="760" cy="250" rx="170" ry="72" fill="#0d8f5a" opacity="0.12" filter="url(#soft)"/>
+
+  <!-- ══ Sao lấp lánh ══ -->
+  <g fill="#d9ffe9">
+    <circle cx="60"  cy="40"  r="1.2"><animate attributeName="opacity" values="0.2;1;0.2" dur="3.2s" repeatCount="indefinite"/></circle>
+    <circle cx="120" cy="95"  r="0.8"><animate attributeName="opacity" values="1;0.2;1"   dur="4.1s" repeatCount="indefinite"/></circle>
+    <circle cx="205" cy="35"  r="1.0"><animate attributeName="opacity" values="0.3;1;0.3" dur="2.6s" begin="-1s" repeatCount="indefinite"/></circle>
+    <circle cx="262" cy="150" r="0.7"/>
+    <circle cx="335" cy="55"  r="1.1"><animate attributeName="opacity" values="0.2;1;0.2" dur="3.7s" begin="-2s" repeatCount="indefinite"/></circle>
+    <circle cx="90"  cy="225" r="0.9"><animate attributeName="opacity" values="1;0.25;1"  dur="4.8s" repeatCount="indefinite"/></circle>
+    <circle cx="165" cy="272" r="1.2"><animate attributeName="opacity" values="0.25;1;0.25" dur="2.9s" begin="-0.6s" repeatCount="indefinite"/></circle>
+    <circle cx="305" cy="255" r="0.8"/>
+    <circle cx="420" cy="38"  r="0.9"><animate attributeName="opacity" values="0.3;1;0.3" dur="3.4s" begin="-1.4s" repeatCount="indefinite"/></circle>
+    <circle cx="524" cy="66"  r="1.1"/>
+    <circle cx="645" cy="42"  r="0.8"><animate attributeName="opacity" values="1;0.2;1"   dur="4.4s" begin="-2.2s" repeatCount="indefinite"/></circle>
+    <circle cx="702" cy="112" r="1.2"><animate attributeName="opacity" values="0.25;1;0.25" dur="3.1s" repeatCount="indefinite"/></circle>
+    <circle cx="782" cy="58"  r="0.9"/>
+    <circle cx="832" cy="150" r="1.1"><animate attributeName="opacity" values="0.3;1;0.3" dur="2.7s" begin="-1.8s" repeatCount="indefinite"/></circle>
+    <circle cx="752" cy="205" r="0.7"/>
+    <circle cx="820" cy="262" r="1.0"><animate attributeName="opacity" values="1;0.25;1"  dur="3.9s" begin="-0.9s" repeatCount="indefinite"/></circle>
+    <circle cx="700" cy="285" r="0.8"/>
+    <circle cx="560" cy="272" r="1.0"><animate attributeName="opacity" values="0.25;1;0.25" dur="3.5s" begin="-2.6s" repeatCount="indefinite"/></circle>
+    <circle cx="390" cy="282" r="0.9"/>
+    <circle cx="48"  cy="160" r="0.8"/>
+    <circle cx="28"  cy="258" r="1.0"><animate attributeName="opacity" values="0.3;1;0.3" dur="4.2s" begin="-1.2s" repeatCount="indefinite"/></circle>
+  </g>
+
+  <!-- Sao lấp lánh hình chữ thập -->
+  <g fill="#baffdd">
+    <path d="M240,75 L241.4,83.6 250,85 241.4,86.4 240,95 238.6,86.4 230,85 238.6,83.6 Z" opacity="0.7">
+      <animate attributeName="opacity" values="0.15;0.9;0.15" dur="3.6s" repeatCount="indefinite"/>
+    </path>
+    <path transform="translate(660,220)" d="M0,-6 L1.5,-1.5 6,0 1.5,1.5 0,6 -1.5,1.5 -6,0 -1.5,-1.5 Z" opacity="0.6">
+      <animate attributeName="opacity" values="0.9;0.15;0.9" dur="4.3s" begin="-1s" repeatCount="indefinite"/>
+    </path>
+    <path transform="translate(822,88) scale(0.8)" d="M0,-6 L1.5,-1.5 6,0 1.5,1.5 0,6 -1.5,1.5 -6,0 -1.5,-1.5 Z" opacity="0.5">
+      <animate attributeName="opacity" values="0.15;0.85;0.15" dur="2.8s" begin="-0.5s" repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <!-- ══ Đường quỹ đạo ══ -->
+  <g fill="none" stroke="#39ffb0" stroke-opacity="0.14" stroke-width="1" stroke-dasharray="3 7">
+    <circle cx="450" cy="160" r="70"/>
+    <circle cx="450" cy="160" r="102"/>
+    <circle cx="450" cy="160" r="134"/>
+  </g>
+
+  <!-- vành đai tiểu hành tinh -->
+  <circle cx="450" cy="160" r="85" fill="none" stroke="#7dffb8" stroke-opacity="0.18"
+          stroke-width="3" stroke-linecap="round" stroke-dasharray="1.5 9.5">
+    <animateTransform attributeName="transform" type="rotate" from="0 450 160" to="360 450 160" dur="60s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- ══ Hố đen ══ -->
+  <circle cx="450" cy="160" r="64" fill="url(#halo)"/>
+
+  <g fill="none" stroke-linecap="round">
+    <!-- đĩa bồi tụ xoáy -->
+    <circle cx="450" cy="160" r="47" stroke="#00ff9d" stroke-opacity="0.45" stroke-width="6" stroke-dasharray="26 18">
+      <animateTransform attributeName="transform" type="rotate" from="0 450 160" to="360 450 160" dur="7s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="450" cy="160" r="53" stroke="#66ffc4" stroke-opacity="0.25" stroke-width="3" stroke-dasharray="8 26">
+      <animateTransform attributeName="transform" type="rotate" from="360 450 160" to="0 450 160" dur="11s" repeatCount="indefinite"/>
+    </circle>
+    <!-- vệt sáng loạn xạ (gravitational lensing) -->
+    <circle cx="450" cy="160" r="43" stroke="#8dffcf" stroke-opacity="0.20" stroke-width="1.6" stroke-dasharray="46 300">
+      <animateTransform attributeName="transform" type="rotate" from="0 450 160" to="360 450 160" dur="14s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="450" cy="160" r="43" stroke="#8dffcf" stroke-opacity="0.14" stroke-width="1.4" stroke-dasharray="30 320">
+      <animateTransform attributeName="transform" type="rotate" from="240 450 160" to="-120 450 160" dur="19s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- chân trời sự kiện + vòng photon -->
+  <circle cx="450" cy="160" r="32" fill="url(#horizon)"/>
+  <circle cx="450" cy="160" r="36" fill="none" stroke="#8dffcf" stroke-width="2.2" opacity="0.95" filter="url(#glow)"/>
+
+  <!-- ══ Hành tinh 1 — quay quanh nhanh ══ -->
+  <g>
+    <animateTransform attributeName="transform" type="rotate" from="-40 450 160" to="320 450 160" dur="7s" repeatCount="indefinite"/>
+    <circle cx="520" cy="160" r="7" fill="url(#p1)"/>
+    <circle cx="517.5" cy="157.5" r="2" fill="#eafff4" opacity="0.8"/>
+  </g>
+
+  <!-- ══ Hành tinh 2 — có vành, quay ngược chiều ══ -->
+  <g>
+    <animateTransform attributeName="transform" type="rotate" from="360 450 160" to="0 450 160" dur="13s" begin="-4s" repeatCount="indefinite"/>
+    <g transform="translate(552,160) rotate(-20)">
+      <ellipse rx="16" ry="5" fill="none" stroke="#9dffcf" stroke-width="1.6" opacity="0.85"/>
+      <circle r="9" fill="url(#p2)"/>
+      <path d="M-16,0 A16,5 0 0 0 16,0" fill="none" stroke="#9dffcf" stroke-width="1.6" opacity="0.85"/>
+      <ellipse cx="-2.5" cy="-2.8" rx="3.2" ry="2.1" fill="#eafff4" opacity="0.65"/>
+    </g>
+  </g>
+
+  <!-- ══ Hành tinh 3 — kèm vệ tinh nhỏ ══ -->
+  <g>
+    <animateTransform attributeName="transform" type="rotate" from="150 450 160" to="510 450 160" dur="21s" repeatCount="indefinite"/>
+    <g transform="translate(584,160)">
+      <circle r="8" fill="url(#p3)"/>
+      <ellipse cx="-2.2" cy="-2.6" rx="2.8" ry="1.9" fill="#eafff4" opacity="0.6"/>
+    </g>
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="0 584 160" to="360 584 160" dur="4.5s" repeatCount="indefinite"/>
+      <circle cx="600" cy="160" r="2.6" fill="#e8fff4"/>
+    </g>
+  </g>
+
+  <!-- ══ Thiên thạch 1 — đuôi lửa xanh ══ -->
+  <g>
+    <animateTransform attributeName="transform" type="rotate" from="0 450 160" to="360 450 160" dur="9s" begin="-2s" repeatCount="indefinite"/>
+    <path d="M535,161 L530,126 L540,126 Z" fill="url(#tailUp)"/>
+    <circle cx="535" cy="160" r="3" fill="#f0fff8" filter="url(#glow)"/>
+  </g>
+
+  <!-- ══ Thiên thạch 2 — quỹ đạo ngoài, ngược chiều ══ -->
+  <g>
+    <animateTransform attributeName="transform" type="rotate" from="360 450 160" to="0 450 160" dur="12s" begin="-6s" repeatCount="indefinite"/>
+    <path d="M568,159 L564,193 L572,193 Z" fill="url(#tailDown)"/>
+    <circle cx="568" cy="160" r="2.5" fill="#dcffef" filter="url(#glow)"/>
+  </g>
+
+  <!-- ══ Sao chổi băng qua vũ trụ ══ -->
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.08;0.85;1" dur="9s" begin="2.5s" repeatCount="indefinite"/>
+    <g>
+      <animateMotion path="M -80 30 L 980 285" dur="9s" begin="2.5s" repeatCount="indefinite"/>
+      <path d="M0,0 L-78,-13" stroke="url(#cometTail)" stroke-width="4.5" stroke-linecap="round"/>
+      <circle r="3.4" fill="#f0fff8" filter="url(#glow)"/>
+    </g>
+  </g>
+</svg>

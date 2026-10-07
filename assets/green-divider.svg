@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="30" viewBox="0 0 800 30" role="img" aria-label="Đường phân cách vũ trụ">
+  <defs>
+    <linearGradient id="line" gradientUnits="userSpaceOnUse" x1="60" y1="15" x2="740" y2="15">
+      <stop offset="0%"   stop-color="#00ff9d" stop-opacity="0"/>
+      <stop offset="50%"  stop-color="#00ff9d" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#00ff9d" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="dcomet" gradientUnits="userSpaceOnUse" x1="-36" y1="0" x2="0" y2="0">
+      <stop offset="0%"  stop-color="#00ff9d" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#eafff4" stop-opacity="0.95"/>
+    </linearGradient>
+    <filter id="dglow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="2.4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <line x1="60" y1="15" x2="740" y2="15" stroke="url(#line)" stroke-width="1.8" stroke-dasharray="5 9"/>
+  <circle cx="120" cy="8"  r="1" fill="#baffdd" opacity="0.7"/>
+  <circle cx="560" cy="23" r="1" fill="#baffdd" opacity="0.6"/>
+  <circle cx="680" cy="7"  r="0.9" fill="#baffdd" opacity="0.5"/>
+  <circle cx="90"  cy="23" r="0.8" fill="#baffdd" opacity="0.5"/>
+
+  <!-- Sao băng chạy dọc đường kẻ -->
+  <g>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.85;1" dur="4.5s" repeatCount="indefinite"/>
+    <g>
+      <animateTransform attributeName="transform" type="translate" values="70 0; 690 0" dur="4.5s" repeatCount="indefinite"/>
+      <path d="M0,15 L-36,12 L-36,18 Z" fill="url(#dcomet)"/>
+      <circle cx="0" cy="15" r="2.6" fill="#d2ffe9" filter="url(#dglow)"/>
+    </g>
+  </g>
+</svg>
